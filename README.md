@@ -1,22 +1,25 @@
 Overview
 This package provides a single node ( draw_rectangle ) that subscribes to /turtle1/pose and publishes velocity commands to /turtle1/cmd_vel. Rather than relying on open-loop timer counts, the node reads the turtle's actual position and heading at each control step to decide when to stop moving and when to stop turning. This eliminates the angular drift that causes tick-based approaches to produce skewed parallelograms instead of true rectangles.
 
-turtlesim_rectangle 
+turtlesim_rectangle :
 
-draw_rectangle.py   # main node - pose-feedback rectangle driver
+-draw_rectangle.py   # main node - pose-feedback rectangle driver
  
-package.xml         # ROS 2 package metadata and dependencies
+-package.xml         # ROS 2 package metadata and dependencies
 
-setup.cfg           # entry point configuration
+-setup.cfg           # entry point configuration
 
- setup.py            # ament_python build configuration
+-setup.py            # ament_python build configuration
  
- README.md
+-README.md
 
 
 Dependencies
+
 rclpy - ROS 2 Python client library
+
 geometry_msgs - Twist message for velocity commands
+
 turtlesimPose - message + simulator node
 
 
