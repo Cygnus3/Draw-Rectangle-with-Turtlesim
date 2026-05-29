@@ -3,13 +3,13 @@ This package provides a single node ( draw_rectangle ) that subscribes to /turtl
 
 turtlesim_rectangle :
 
--draw_rectangle.py   # main node - pose-feedback rectangle driver
+-draw_rectangle.py   : main node - pose-feedback rectangle driver
  
--package.xml         # ROS 2 package metadata and dependencies
+-package.xml         : ROS 2 package metadata and dependencies
 
--setup.cfg           # entry point configuration
+-setup.cfg           : entry point configuration
 
--setup.py            # ament_python build configuration
+-setup.py            : ament_python build configuration
  
 -README.md
 
